@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Body */
+body{
+    background-color: hsl(257, 40%, 49%);
+    background-image: url(bg-desktop.svg);
+}
+
+/* Header */
+header{
+    margin: 2em 4em;
+    width: 20%;
+}
+
+/* Header Image */
+header img{
+    width: 100%;
+    max-width: 300px;
+    /* min-width: 100px; */
+}
+
+/* Container */
+main{
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+/* Contents */
+section{
+    width: 100%;
+    margin: 1em 0;
+}
+
+/* the side with the illustration */
+.side-1{
+    width: 100%;
+    max-width: 600px;
+}
+
+/* illustration */
+.side-1 img{
+    width: 100%;
+    max-width: 600px;
+}
+
+/* the side with the text */
+.side-2{
+    width: 100%;
+    max-width: 450px;
+    font-family: Poppins , sans-serif;
+    margin: 2em;
+}
+
+.side-2 h2{
+    font-size: 2rem; 
+    line-height: 3rem;
+    color: #fff;
+    font-weight: 600;
+    margin-top: 1em;
+}
+
+.side-2 p{
+    line-height: 1.5rem;
+    color: #fff;
+    margin: 2em 0 0.5em 0;
+    font-weight: 100;
+}
+
+button{
+    border: none;
+    background: #fff;
+    color: hsl(257, 40%, 49%);
+    padding: 1em 3em;
+    border-radius: 2em;
+    margin-top: 1em;
+    /* Add box-shadow and the logo @the end */
+}
+
+button:hover{
+    cursor: pointer;
+    color: #fff;
+    background-color: hsl(300, 69%, 71%);
+}
+
+footer{
+    text-align: center;
+    margin-left: 65%;
+}
+
+.footer-logos{
+    width: 1.5em;
+    fill: #fff;
+    padding: 0.5em;
+}
+.footer-logos:hover{
+    fill: hsl(300, 69%, 71%);
+}
+
+
+
+/* Making it responsive */
+@media (max-width: 950px){
+    body{
+        background-image: url(bg-mobile.svg);
+        background-repeat: no-repeat;
+    }
+
+    header{
+        margin: 2em;
+    }
+
+    main{
+        min-width: 300px;
+        flex-direction: column;
+    }
+
+    section{
+        margin: auto;
+        text-align: center;
+        max-width: 300px;
+    }
+    
+    .side-1{
+        max-width: 300px;
+    }
+
+    .side-2{
+        margin: auto;
+    }
+
+    .side-2 h2{
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+        
+    }
+
+    footer{
+        text-align: center;
+        margin-top: 2.5em;
+        margin-left: 0;
+    }
+    
+    .footer-logos{
+        width: 1em;
+        fill: #fff;
+        padding: 0.5em;
+    }
+    .footer-logos:hover{
+        fill: hsl(300, 69%, 71%);
+    }
+    
+}
